@@ -90,11 +90,6 @@ a:hover {
   gap: 1rem;
 }
 
-@media (max-width: 450px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-}
 
 .hobbies {
   display: flex;
@@ -141,6 +136,13 @@ nav a:hover {
   color: black;
 }
 
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 15px double #64203a;
+}
 @media (min-width: 778px) {
   header {
     justify-content: center;
@@ -151,10 +153,14 @@ nav a:hover {
     justify-content: center;
   }
 }
-
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  border-top: 15px double #64203a;
+@media (max-width: 450px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 397px) {
+  .butterfly {
+    margin-right: 0rem;
+    width: 170px;
+  }
 }
